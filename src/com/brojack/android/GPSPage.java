@@ -21,6 +21,8 @@ public class GPSPage extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.gps);
+
+        // adding a comment
         
         txtLat = (TextView) findViewById(R.id.txtLat);
         txtLng = (TextView) findViewById(R.id.txtLng);
