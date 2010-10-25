@@ -7,8 +7,6 @@
 <TextView  
     android:layout_width="fill_parent" 
     android:layout_height="wrap_content" 
-    android:text="@string/hello"
+    android:text="GPSPage"
     />
-    
-<Button android:text="GPS Page" android:id="@+id/Button01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="loadGPS"></Button>
 </LinearLayout>

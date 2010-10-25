@@ -1,7 +1,9 @@
 package com.brojack.android;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 public class brojack extends Activity {
     /** Called when the activity is first created. */
@@ -9,5 +11,10 @@ public class brojack extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+    }
+    
+    public void loadGPS(View view) {
+        Intent i = new Intent(view.getContext(), GPSPage.class);
+        view.getContext().startActivity(i);
     }
 }
