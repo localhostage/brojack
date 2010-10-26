@@ -17,4 +17,10 @@ public class brojack extends Activity {
         Intent i = new Intent(view.getContext(), GPSPage.class);
         view.getContext().startActivity(i);
     }
+    
+    public void loadPhone(View view) {
+        Intent i = new Intent(view.getContext(), PhonePage.class);
+        view.getContext().startActivity(i);
+    }    
+    
 }
