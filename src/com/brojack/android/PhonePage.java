@@ -23,7 +23,7 @@ public class PhonePage extends Activity{
     }
     
     public void doPhoneNumber() {
-    	txtOwnNumber.setText(getOwnPhoneNumber());
+    	txtOwnNumber.setText("Phone number: " + getOwnPhoneNumber());
     }
     
     private String getOwnPhoneNumber() {
