@@ -57,9 +57,9 @@ public class GPSPage extends Activity {
     public void stopGps(View view)
     {
     	stopGps = true;
+    	locationManager = null;
     }
-    
-    
+
     private final LocationListener locationListener = new LocationListener() {
     	  public void onLocationChanged(Location location) {
     	    updateWithNewLocation(location);
