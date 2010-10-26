@@ -67,6 +67,8 @@ public class GPSPage extends Activity {
     	if(location != null) {
     		txtLat.setText("lat: " + location.getLatitude());
     		txtLng.setText("lng: " + location.getLongitude());
+    		
+    		doGps(this.getCurrentFocus());
     	}
     }
 }
