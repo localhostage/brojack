@@ -16,12 +16,13 @@ public class PhonePage extends Activity{
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.phone);
-        
+
         txtOwnNumber = (TextView) findViewById(R.id.txtOwnNumber);
+        doPhoneNumber();
 
     }
     
-    public void doPhoneNumber(View view) {
+    public void doPhoneNumber() {
     	txtOwnNumber.setText(getOwnPhoneNumber());
     }
     
