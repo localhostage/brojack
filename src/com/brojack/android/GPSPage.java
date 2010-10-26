@@ -59,6 +59,8 @@ public class GPSPage extends Activity {
     	stopGps = true;
     }
     
+    // jared can you see this?
+    
     private final LocationListener locationListener = new LocationListener() {
     	  public void onLocationChanged(Location location) {
     	    updateWithNewLocation(location);

@@ -11,5 +11,6 @@
     />
 <TextView android:text="lat: null" android:id="@+id/txtLat" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
 <TextView android:text="lng: null" android:id="@+id/txtLng" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
-<Button android:text="Get GPS" android:id="@+id/Button01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="doGps"></Button>
+<Button android:text="Start GPS" android:id="@+id/Button01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="doGps"></Button>
+<Button android:text="Stop GPS" android:id="@+id/Button02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="stopGps"></Button>
 </LinearLayout>
