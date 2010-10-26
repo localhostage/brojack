@@ -16,6 +16,7 @@ public class GPSPage extends Activity {
 	TextView txtLat;
 	TextView txtLng;
 	LocationManager locationManager;
+	boolean stopGps = false;
 	
     /** Called when the activity is first created. */
     @Override
@@ -31,6 +32,7 @@ public class GPSPage extends Activity {
     
     public void doGps(View view)
     {
+    	stopGps = false;
     	if(locationManager == null) {
     		locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
     		
@@ -52,6 +54,11 @@ public class GPSPage extends Activity {
     	}
     }
     
+    public void stopGps(View view)
+    {
+    	stopGps = true;
+    }
+    
     private final LocationListener locationListener = new LocationListener() {
     	  public void onLocationChanged(Location location) {
     	    updateWithNewLocation(location);
@@ -68,7 +75,10 @@ public class GPSPage extends Activity {
     		txtLat.setText("lat: " + location.getLatitude());
     		txtLng.setText("lng: " + location.getLongitude());
     		
-    		doGps(this.getCurrentFocus());
+    		if(stopGps)
+    		{
+    			doGps(this.getCurrentFocus());
+    		}
     	}
     }
 }
