@@ -21,6 +21,8 @@ public class brojack extends Activity {
     public void loadPhone(View view) {
         Intent i = new Intent(view.getContext(), PhonePage.class);
         view.getContext().startActivity(i);
+
+        //testing git integration
     }    
     
 }
